@@ -2,6 +2,7 @@ package com.r4hu1.fridaplayground;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R .layout.activity_main);
 
         ListView mListView = (ListView) findViewById(R.id.list);
 
@@ -58,15 +59,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     public void button(View view) {
 
-            Button bt=(Button) findViewById(R.id.but_ID);
-//            String a = bt.getText().toString();
-//            Toast.makeText(this, "Button "+bt.getText().toString(),Toast.LENGTH_LONG).show();
-//            int position = (Integer) view.getTag();
-        Toast.makeText(this, "Button "+bt.getText().toString(),Toast.LENGTH_LONG).show();
+        Button bt=(Button)view;
+        Intent i;
+        switch (bt.getText().toString()) {
+            case "Chall 1":
+                i=new Intent(this,HookMe.class)
+                break;
+            case "Chall 2":
+                Toast.makeText(this, "Button 2 pressed",Toast.LENGTH_LONG).show();
+                break;
+            case "Chall 3":
+                Toast.makeText(this, "Button 3 pressed",Toast.LENGTH_LONG).show();
+                break;
+            case "Chall 4":
+                Toast.makeText(this, "Button 4 pressed",Toast.LENGTH_LONG).show();
+                break;
 
-
+        }
     }
+
     }
 
