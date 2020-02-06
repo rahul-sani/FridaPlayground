@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:shape="rectangle">-->
+<!--    <corners android:radius="10dp"/> &lt;!&ndash; increasing the value, increases the rounding. And as  TTransmit said, to make it like a capsule make the radius half of your button height &ndash;&gt;-->
+<!--    <solid android:color="@color/colorAccent"/> &lt;!&ndash; the button color &ndash;&gt;-->
+
+<!--</shape>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- Gray shadow. -->
+<item android:left="1dp" android:top="2dp">
+    <shape>
+        <solid android:color="@color/colorPrimaryDark" />
+        <corners android:radius="10dp" />
+    </shape>
+</item>
+
+<!-- White foreground. -->
+<item android:bottom="3dp" android:right="2dp">
+    <shape>
+        <solid android:color="@color/colorAccent" />
+        <corners android:radius="10dp" />
+    </shape>
+</item>
+</layer-list>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/descID"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:text=""
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:clickable="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/but_ID"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+         android:background="@drawable/button_anim"
+         android:layout_marginTop="8dp"
+        android:text=""
+        android:onClick="button"/>
+
+</LinearLayout>
