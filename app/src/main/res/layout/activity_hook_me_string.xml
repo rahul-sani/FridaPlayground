@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HookMeString"
+    android:background="@color/background">
+
+    <com.github.florent37.shapeofview.shapes.DiagonalView
+        android:id="@+id/diagonalView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_diagonal_angle="7"
+        app:shape_diagonal_direction="left"
+        app:shape_diagonal_position="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+        </View>
+
+        <TextView
+            android:id="@+id/DescHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/description"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:textColor="@color/background"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Desc"
+            android:layout_width="372dp"
+            android:layout_height="118dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="There is an unsung hero among which helps you solve this challenge. Find a way to use the unsung hero to retrieve the flag!! "
+            android:gravity="left"
+            android:textColor="@color/background"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ObjHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="175dp"
+            android:text="@string/hackflow"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:textColor="@color/background"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Obj"
+            android:layout_width="372dp"
+            android:layout_height="118dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="205dp"
+            android:text="Find a way to load the instance of the class and then call the function."
+            android:textColor="@color/background"
+            android:textSize="20dp"
+            />
+
+    </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
