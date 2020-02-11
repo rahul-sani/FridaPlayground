@@ -52,4 +52,14 @@ extern "C"
 JNIEXPORT jstring JNICALL
 Java_com_r4hu1_fridaplayground_OverloadedFunc_stringFromJNI(JNIEnv *env, jobject thiz) {
     std::string hello = "FP{test_flag}";
-    return env->NewStringUTF(hello.c_str());}
+    return env->NewStringUTF(hello.c_str());
+}
+
+    extern "C"
+    JNIEXPORT jstring JNICALL
+    Java_com_r4hu1_fridaplayground_HookMeVariable_stringFromJNI(JNIEnv *env, jobject thiz) {
+
+        std::string hello = "FP{test_flag}";
+        return env->NewStringUTF(hello.c_str());
+
+    }

@@ -8,6 +8,10 @@ import android.widget.Toast;
 
 public class OverloadedFunc extends AppCompatActivity {
 
+    static {
+        System.loadLibrary("native-lib");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
